@@ -1,6 +1,15 @@
-console.log(1+1);
+import pc from "picocolors"
+import { input } from '@inquirer/prompts';
 
-while (i == 1) {
-    console.log("Hello, world!");
-  }
+const answer = await input({ message: 'Enter your name' });
+console.log(pc.green(`Hello ${answer}!`));
+
+
+// import version from "./cmd/version"
+
+
+// while (i == 1) {
+//     console.log("Hello, world!");
+
+//   }
   
